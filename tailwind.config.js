@@ -223,7 +223,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Fira Sans',
+        'Lato',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
@@ -237,7 +237,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['Cardo', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['Gentium Basic', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'SFMono-Regular',
         'Menlo',
