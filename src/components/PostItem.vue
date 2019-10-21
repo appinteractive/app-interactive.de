@@ -2,8 +2,8 @@
   <article>
     <div class="mx-auto max-w-3xl px-6">
       <div class="py-8 sm:py-20 border-b border-gray-300">
-        <header class="text-center mb-8">
-          <time :datetime="post.datetime" class="text-gray-700 text-xs mb-2 uppercase">{{ formatPublishDate(post.datetime) }}</time>
+        <header class="px-2 sm:px-4 md:px-10 mb-8">
+          <time :datetime="post.datetime" class="text-gray-700 text-xs mb-2">{{ formatPublishDate(post.datetime) }}</time>
           <h2 class="text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
             <g-link :to="`${post.path}/`" class="text-black font-bold">{{ post.title }}</g-link>
           </h2>
@@ -21,18 +21,19 @@
 </template>
 
 <script>
-import moment from 'moment'
+import { format } from 'date-fns'
+import { de } from 'date-fns/locale'
 
 export default {
   props: ['post'],
   computed: {
     formattedPublishDate() {
-      return moment(this.post.datetime).format('DD MMMM, YYYY');
+      return format(new Date(this.post.datetime), 'dd. MMMM yyyy', { locale: de })
     },
   },
   methods: {
     formatPublishDate(date) {
-      return moment(date).format('DD MMMM, YYYY');
+      return format(new Date(date), 'dd. MMMM yyyy', { locale: de })
     },
     excerpt(post, length, clamp) {
       if (post.excerpt) {

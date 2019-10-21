@@ -121,7 +121,7 @@ This is a flexible alert component, defined in `/src/components/Alert.vue` and p
     ...
 </template>
 ```
-The `postIsOlderThanOneYear` computed property uses `moment.js`, so you can customise it to any date you need.
+The `postIsOlderThanOneYear` computed property uses `date-fns`, so you can customise it to any date you need.
 
 The `color` prop can be any color name from your `tailwind.js` config. If you omit it, the alert will use <span class="inline-block bg-blue-lightest border-l-4 border-blue text-blue-darker px-2 py-px stext-sm">blue</span> as a fallback.
 

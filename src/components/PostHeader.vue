@@ -15,7 +15,7 @@
       </div>
       <ClientOnly>
         <parallax :speed-factor="speedFactor" :sectionHeight="80">
-          <img :src="post.cover" :alt="post.title">
+          <g-image :src="post.cover" :alt="post.title" width="80" />
         </parallax>
       </ClientOnly>
     </div>
@@ -38,7 +38,8 @@
 </template>
 
 <script>
-import moment from 'moment'
+import { format } from 'date-fns'
+import { de } from 'date-fns/locale'
 import Parallax from "vue-parallaxy"
 
 export default {
@@ -56,7 +57,7 @@ export default {
   },
   computed: {
     formattedPublishDate() {
-      return moment(this.post.datetime).format('DD MMMM, YYYY');
+      return  format(new Date(this.post.datetime), 'dd. MMMM yyyy', { locale: de });
     },
     speedFactor() {
       return this.post.fullscreen ? 0.21 : 0.37

@@ -21,7 +21,7 @@
           <div v-if="$page.post.author" class="flex flex-wrap items-center justify-center sm:justify-left border-t border-b border-gray-300 w-full mt-10 py-10 sm:px-16">
             <figure class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center">
               <g-link :to="`${$page.post.author.path}/`">
-                <img :src="avatar" :alt="$page.post.author.title" @error="imageLoadError" width="100" class="rounded-full p-4 sm:p-0">
+                <g-image :src="avatar" :alt="$page.post.author.title" @error="imageLoadError" width="100" class="rounded-full p-4 sm:p-0" />
               </g-link>
             </figure>
             <div class="px-4 sm:w-4/5 text-center sm:text-left">
@@ -42,7 +42,8 @@
 </template>
 
 <script>
-import moment from 'moment'
+import { format, differenceInYears } from 'date-fns'
+import { de } from 'date-fns/locale'
 import config from '~/.temp/config.js'
 import Alert from '@/components/Alert'
 import slugify from '@sindresorhus/slugify'
@@ -69,7 +70,7 @@ export default {
         { property: "og:title", content: this.$page.post.title },
         { property: "og:description", content: this.description(this.$page.post) },
         { property: "og:url", content: this.postUrl },
-        { property: "article:published_time", content: moment(this.$page.post.date).format('YYYY-MM-DD') },
+        { property: "article:published_time", content: format(new Date(this.$page.post.datetime), 'yyyy-MM-dd', { locale: de }) },
         { property: "og:image", content: this.ogImageUrl },
 
         { name: "twitter:card", content: "summary_large_image" },
@@ -117,8 +118,8 @@ export default {
       return `/images/authors/${this.$page.post.author.id}.png`
     },
     postIsOlderThanOneYear () {
-      let postDate = moment(this.$page.post.datetime)
-      return moment().diff(postDate, 'years') > 0 ? true : false
+      let postDate = new Date(this.$page.post.datetime)
+      return differenceInYears(new Date(), postDate) > 0 ? true : false
     },
     postUrl () {
       let siteUrl = this.config.siteUrl
