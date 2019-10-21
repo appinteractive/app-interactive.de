@@ -1,31 +1,31 @@
 ---
-title: "Writing posts"
-description: "Writing posts in Markdown with Bleda for Gridsome"
-date: 2019-02-28 15:16:11
+title: "Writing posts \U0001F648 "
+description: Writing posts in Markdown with Bleda for Gridsome
+date: 2019-02-28T15:16:11.000+00:00
 author: gridsome
 slug: writing-posts-markdown
 tags:
-    - getting-started
-    - content
+- getting-started
+- content
 cover: https://images.unsplash.com/photo-1539815913963-92c9bfeb9d1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=900&crop=bottom&q=80
----
 
+---
 The starter uses Gridsome's filesystem source plugin, which means blog posts are Markdown files that exist in the `/content/posts` directory.
 
-## Creating a new post
+## Creating a new post 🥳
 
 There are 2 ways you can create a new post with Bleda:
 
 1. Simply add a new, uniquely-named `*.md` file in the `/content/posts` directory - duh!
 2. In your terminal, navigate to the project root and run this command:
 
-    ```sh
-    npm run newpost "My post title"
-    ```
+   ```sh
+   npm run newpost "My post title"
+   ```
 
-    The quotes around the title are mandatory.
+   The quotes around the title are mandatory.
 
-    This will create a new file named `YYYY-MM-DD-my-post-title.md` under `/content/posts`.
+   This will create a new file named `YYYY-MM-DD-my-post-title.md` under `/content/posts`.
 
 ## Supported Front Matter keys
 
@@ -71,11 +71,11 @@ Normal paragraphs should not be indented with spaces or tabs.
 
 Make text:
 
-- **bold**: `**bold text**`
-- _italic_: `_italic text_`
-- ~~strikethrough~~: `~~strikethrough text~~`
-- <mark>highlighted</mark>: `<mark>highlighted text</mark>`
-- [link](https://example.com): `[link text](https://example.com)`
+* **bold**: `**bold text**`
+* _italic_: `_italic text_`
+* ~~strikethrough~~: `~~strikethrough text~~`
+* <mark>highlighted</mark>: `<mark>highlighted text</mark>`
+* [link](https://example.com): `[link text](https://example.com)`
 
 For links, you can also use the [reference-style](https://daringfireball.net/projects/markdown/syntax#link):
 
@@ -116,6 +116,8 @@ Of course, you can reference images from a CDN:
 
 `![Image alt text](https://example.com/image.jpg)`
 
+***
+
 #### Linking images
 
 With Markdown, do: `[![Image alt text](https://example.com/path/to/image.jpg)](url to link to)`
@@ -140,7 +142,7 @@ Any of the following:
 
 ... will create a `<hr>` like this one:
 
----
+***
 
 ### Code blocks
 
@@ -175,19 +177,17 @@ Specify the language ([reference](https://github.com/octref/shiki/blob/master/pa
 
 If you don't specify a language, the code block will not be wrapped in a `<pre>` tag, and will look like this:
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum</p>
-</body>
-</html>
-```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Lorem ipsum</p>
+    </body>
+    </html>
 
----
+***
 
 Cover photo by [Joyce McCown](https://unsplash.com/photos/h4BIz4rPPy0).
