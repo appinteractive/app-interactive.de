@@ -26,7 +26,7 @@
                 class="text-gray-700 capitalize border-b border-transparent hover:border-gray-400 transition-border-color"
               >{{ titleCase(post.tags[0].title) }}</g-link>
             </span>
-            <span v-if="post.author || (post.tags && post.tags.length > 0)">·</span>
+            <span v-if="post.author || (post.tags && post.tags.length > 0)">&nbsp;&nbsp;·&nbsp;&nbsp;</span>
             <span>{{ post.timeToRead }} min read</span>
           </p>
         </header>

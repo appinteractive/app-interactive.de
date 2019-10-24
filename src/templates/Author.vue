@@ -10,8 +10,10 @@
           <g-link to="/" class="text-sm border text-gray-900 border-gray-400 opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity">&larr; Home</g-link>
         </nav>
       </header>
-      <section>
-        <post-item v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
+      <section class="bg-gray-200 py-10">
+        <content class="container flex flex-wrap mx-auto">
+          <post-item v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id" :post="edge.node" class="w-full sm:w-1/2 xl:w-1/3" />
+        </content>
       </section>
       <pagination :base="`${$page.author.path}`" :info="$page.author.belongsTo.pageInfo" v-if="$page.author.belongsTo.pageInfo.totalPages > 1" />
       <site-footer class="py-8 sm:py-16" />
@@ -89,6 +91,7 @@ query Author ($path: String!, $page: Int) {
           ...on Post {
             id
             title
+            timeToRead
             datetime: date (format: "YYYY-MM-DD HH:mm:ss")
             path
             content

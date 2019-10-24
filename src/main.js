@@ -4,5 +4,5 @@ export default function (Vue, { head }) {
   Vue.component('Layout', DefaultLayout)
 
   head.htmlAttrs = { lang: 'de', class: 'h-full' }
-  head.bodyAttrs = { class: 'antialiased font-serif' }
+  head.bodyAttrs = { class: 'antialiased font-sans' }
 }

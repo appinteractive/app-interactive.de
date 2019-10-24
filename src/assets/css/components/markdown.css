@@ -101,8 +101,14 @@
 
 .post-cover {
   &::after {
-    @apply absolute w-full h-48 left-0 bottom-0 z-0;
+    @apply absolute w-full h-full left-0 bottom-0 z-0;
     content: '';
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.5) 100%);
+  }
+  &::before {
+    @apply absolute w-full h-full left-0 top-0 z-0;
+    content: '';
+    transform: scaleY(-1);
     background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.5) 100%);
   }
 
