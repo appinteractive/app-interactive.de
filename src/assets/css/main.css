@@ -11,3 +11,5 @@
 @import 'tailwindcss/utilities';
 
 @import 'components/fonts';
+
+@import 'components/transitions';

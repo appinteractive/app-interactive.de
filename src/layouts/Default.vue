@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <slot/>
-  </div>
+  <transition name="fade" appear>
+    <main>
+      <slot/>
+    </main>
+  </transition>
 </template>
 
 <script>
