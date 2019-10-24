@@ -20,7 +20,6 @@
 
 - Sitemap
 - RSS Feed
-- Google Analytics
 - Custom 404 Page
 - Open Graph meta tags
 - Code syntax highlighting

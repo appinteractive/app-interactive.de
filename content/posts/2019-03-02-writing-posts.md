@@ -1,7 +1,7 @@
 ---
 title: "Writing posts \U0001F648 "
 description: Writing posts in Markdown with Bleda for Gridsome
-date: 2019-02-28T15:16:11.000+00:00
+date: 2019-02-28 15:16:11
 author: gridsome
 slug: writing-posts-markdown
 tags:

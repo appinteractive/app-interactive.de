@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { format } from 'date-fns'
+import { format, parseISO, isValid } from 'date-fns'
 import { de } from 'date-fns/locale'
 import Parallax from "vue-parallaxy"
 
@@ -57,7 +57,7 @@ export default {
   },
   computed: {
     formattedPublishDate() {
-      return  format(new Date(this.post.datetime), 'dd. MMMM yyyy', { locale: de });
+      return format(parseISO(this.post.datetime), 'dd. MMMM yyyy', { locale: de });
     },
     speedFactor() {
       return this.post.fullscreen ? 0.21 : 0.37

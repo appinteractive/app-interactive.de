@@ -1,0 +1,93 @@
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        black: '#22292f',
+        gray: {
+          codeblock: '#fbfcfd',
+        }
+      },
+      spacing: {
+        '72': '18rem',
+      },
+      letterSpacing: {
+        code: 1.75,
+      },
+      maxHeight: {
+        cover: '32rem',
+      },
+      minHeight: {
+        cover: '32rem',
+      }
+    },
+    fontFamily: {
+      sans: [
+        'Lato',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
+      serif: [
+        'Gentium Basic',
+        'Georgia',
+        'Cambria',
+        '"Times New Roman"',
+        'Times',
+        'serif',
+      ],
+      mono: [
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        '"Liberation Mono"',
+        '"Courier New"',
+        'monospace',
+      ]
+    },
+    transitionDelay: {
+      none: '0ms'
+    },
+    transitionDuration: {
+      default: '250ms',
+      '100': '100ms',
+      '200': '200ms',
+      '300': '300ms',
+      '400': '400ms',
+      '500': '500ms'
+    },
+    transitionProperty: {
+      color: 'color',
+      'border-color': 'border-color',
+      bg: 'background-color',
+      opacity: 'opacity',
+      transform: 'transform'
+    },
+    transitionTimingFunction: {
+      default: 'ease-out'
+    },
+    willChange: {
+      opacity: 'opacity',
+      transform: 'transform'
+    },
+    placeholderColor: theme => theme('colors'),
+  },
+  variants: {
+    transitionDelay: ['responsive'],
+    transitionDuration: ['responsive'],
+    transitionProperty: ['responsive'],
+    transitionTimingFunction: ['responsive'],
+    willChange: ['responsive'],
+    placeholderColor: ['responsive', 'focus'],
+  },
+  plugins: [require('tailwindcss-transitions')()]
+};

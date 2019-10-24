@@ -30,7 +30,6 @@ Alternatively, you can clone or download the [repo on GitHub](https://github.com
 
 - Sitemap
 - RSS Feed
-- Google Analytics
 - Custom 404 Page
 - Open Graph meta tags
 - Code syntax highlighting
@@ -47,21 +46,6 @@ Alternatively, you can clone or download the [repo on GitHub](https://github.com
 ## Configuration
 
 You'll need to change some Bleda defaults before deploying your own site.
-
-#### Google Analytics
-
-If you want to use Google Analytics, make sure to change the default tracking code in `gridsome.config.js`:
-
-```js
-{
-use: '@gridsome/plugin-google-analytics',
-  options: {
-    id: 'UA-135446199-1' // <- change this
-  }
-}
-```
-
-To disable GA, simply comment out or delete that entire code block.
 
 #### Sitemap
 

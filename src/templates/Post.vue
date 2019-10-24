@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { format, differenceInYears } from 'date-fns'
+import { format, parseISO, differenceInYears } from 'date-fns'
 import { de } from 'date-fns/locale'
 import config from '~/.temp/config.js'
 import Alert from '@/components/Alert'
@@ -70,7 +70,7 @@ export default {
         { property: "og:title", content: this.$page.post.title },
         { property: "og:description", content: this.description(this.$page.post) },
         { property: "og:url", content: this.postUrl },
-        { property: "article:published_time", content: format(new Date(this.$page.post.datetime), 'yyyy-MM-dd', { locale: de }) },
+        { property: "article:published_time", content: format(parseISO(this.$page.post.datetime), 'yyyy-MM-dd', { locale: de }) },
         { property: "og:image", content: this.ogImageUrl },
 
         { name: "twitter:card", content: "summary_large_image" },
