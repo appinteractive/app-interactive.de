@@ -8,6 +8,7 @@ tags:
     - wiki
     - dummy
 cover:
+draft: true
 ---
 
 As nephews to Rugila, Attila and his elder brother Bleda succeeded him to the throne. Bleda's reign lasted for eleven years until his death. While it has been speculated by Jordanes<sup>[2]</sup> that Attila murdered him on a hunting trip, it is unknown exactly how he died. However, there is an alternative theory that Bleda attempted to kill Attila on a hunting trip, but Attila being a skilled warrior defeated Bleda. One of the few things known about Bleda is that, after the great Hun campaign of 441, he acquired a Moorish dwarf named Zerco.

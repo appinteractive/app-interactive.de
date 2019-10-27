@@ -4,6 +4,7 @@ description: "Markdown post content stress test. See how your post content is be
 date: 2019-02-27 17:54:43
 author: gridsome
 tags: ['markdown', 'design']
+draft: true
 ---
 
 **Blog posts in Bleda are written using Markdown. However, you are free to use HTML inside Markdown, for any elements not covered by the spec.**

@@ -9,6 +9,7 @@ tags:
     - dummy
 cover:
 excerpt: "Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. I gave it a cold? I gave it a virus. A computer virus. Just my luck, no ice. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should [...]"
+draft: true
 ---
 
 https://jeffsum.com/

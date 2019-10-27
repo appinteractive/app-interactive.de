@@ -8,8 +8,10 @@ tags:
 - getting-started
 - content
 cover: /images/posts/typewriter.jpg
-
+draft: true
 ---
+[TOC]
+
 The starter uses Gridsome's filesystem source plugin, which means blog posts are Markdown files that exist in the `/content/posts` directory.
 
 ## Creating a new post 🥳
@@ -157,12 +159,12 @@ Surround your code with triple backticks, like this:
 ```markdown
     ```language
     your code here
-    ```
+```
 ```
 
 Specify the language ([reference](https://github.com/octref/shiki/blob/master/packages/languages/src/lang.ts)) in order to get proper syntax highlighting:
 
-```html
+​```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

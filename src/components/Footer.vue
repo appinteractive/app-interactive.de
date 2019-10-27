@@ -5,8 +5,8 @@
       <p>Twitter: <a href="https://twitter.com/willknowthat" class="border-b border-transparent hover:border-gray-400 transition-border-color">@willknowthat</a></p>
       <!-- <p>Built with <a href="https://gridsome.org" class="border-b border-transparent hover:border-gray-400 transition-border-color">Gridsome</a> &amp; <a href="https://tailwindcss.com/" class="border-b border-transparent hover:border-gray-400 transition-border-color">Tailwind CSS</a>.</p> -->
     </div>
-    <div class="w-full sm:w-1/2">
-      <nav>
+    <div class="w-full sm:w-1/2 flex-wrap">
+      <nav class="w-full">
         <ul class="flex sm:justify-end -mx-2">
           <li class="px-2">
             <g-link to="/" class="border-b border-transparent hover:border-gray-400 transition-border-color">Home</g-link>
@@ -19,6 +19,16 @@
           </li>
           <li class="px-2">
             <a href="/feed.xml" class="border-b border-transparent hover:border-gray-400 transition-border-color">RSS Feed</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="w-full">
+        <ul class="flex sm:justify-end -mx-2">
+          <li class="px-2">
+            <g-link to="/datenschutz" class="border-b border-transparent hover:border-gray-400 transition-border-color">Datenschutzerklärung</g-link>
+          </li>
+          <li class="px-2">
+            <g-link to="/impressum" class="border-b border-transparent hover:border-gray-400 transition-border-color">Impressum</g-link>
           </li>
         </ul>
       </nav>

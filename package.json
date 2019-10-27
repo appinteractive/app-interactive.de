@@ -14,10 +14,13 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.3.4",
     "date-fns": "^2.6.0",
-    "gridsome": "^0.7.8",
+    "gridsome": "^0.7.9",
+    "gridsome-plugin-feed": "^1.0.2",
     "gridsome-plugin-remark-shiki": "^0.3.0",
     "gridsome-plugin-rss": "^1.2.0",
     "medium-zoom": "^1.0.4",
+    "remark-toc": "^6.0.0",
+    "save": "^2.4.0",
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {

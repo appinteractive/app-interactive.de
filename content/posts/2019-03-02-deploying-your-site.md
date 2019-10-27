@@ -6,6 +6,7 @@ author: gridsome
 tags:
     - getting-started
 cover: https://images.unsplash.com/photo-1533279443086-d1c19a186416?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=900&q=80
+draft: true
 ---
 
 Seriously, this is a static site.

@@ -32,6 +32,9 @@ export default {
     Pagination,
     SiteFooter,
   },
+  mounted() {
+    this.$route.params.draft = false
+  },
   metaInfo () {
     return {
       title: this.config.siteName,
@@ -64,7 +67,7 @@ export default {
 
 <page-query>
   query Home ($page: Int) {
-    posts: allPost (page: $page, perPage: 6) @paginate {
+    posts: allPost (page: $page, perPage: 6, filter: { draft: { ne: true }, type: { ne: "page" } }) @paginate {
       totalCount
       pageInfo {
         totalPages

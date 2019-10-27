@@ -9,6 +9,7 @@ tags:
     - dummy
 cover: https://images.unsplash.com/photo-1495669735947-8ebe33b049bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=1080&q=80
 fullscreen: true
+draft: true
 ---
 
 We'll put a happy little bush here. A little happy sunlight shining through there. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted. Trees get lonely too, so we'll give him a little friend. Nothing's gonna make your husband or wife madder than coming home and having a snow-covered dinner. Let your imagination be your guide.
