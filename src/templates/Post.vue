@@ -21,7 +21,8 @@
           <div v-if="$page.post.author" class="flex flex-wrap items-center justify-center sm:justify-left border-t border-b border-gray-300 w-full mt-10 py-10 sm:px-16">
             <figure class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center">
               <g-link :to="`${$page.post.author.path}/`">
-                <g-image :src="avatar" :alt="$page.post.author.title" @error="imageLoadError" width="100" class="rounded-full p-4 sm:p-0" />
+                <!-- <g-image :src="avatar" :alt="$page.post.author.title" @error="imageLoadError" width="100" class="rounded-full p-4 sm:p-0" /> -->
+                <g-image src="../../static/images/authors/grzegorz-leoniec.png" :alt="$page.post.author.title" @error="imageLoadError" width="100" class="rounded-full p-4 sm:p-0" />
               </g-link>
             </figure>
             <div class="px-4 sm:w-4/5 text-center sm:text-left">
@@ -115,7 +116,7 @@ export default {
       return config
     },
     avatar () {
-      return `/images/authors/${this.$page.post.author.id}.png`
+      return `${this.$page.post.author.id}.png`
     },
     postIsOlderThanOneYear () {
       let postDate = new Date(this.$page.post.datetime)
